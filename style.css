@@ -2,41 +2,56 @@
 
 body {
     background-color: rgb(39, 4, 4);
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "Noto Sans Symbols 2", sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* align-items: center; */
 
 }
 
+.nestedrow {
+  display: flex;
+  align-items: center;
+}
+
+.row > .column > {
+  display: flex;
+  align-items: center;
+}
+
+h3 {
+  display: block; 
+}
 
 
 .nestedContent {
     background-color: red;
 }
 .column {
-  width: 100%;
+  width: 100px%;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.row {
+  display: flex;
+  flex-direction: column;
 }
+
+
 
 /* Styles for screens 600px wide and larger */
 @media screen and (min-width: 600px) {
     body {
         background-color: rgb(0, 0, 0) 226);
     }
-
-    h3 {
-      display: none;
+    .row {
+      display: flex;
+      flex-direction: row;
     }
 
-    /* Create three equal columns that float next to each other */
-.column {
-  float: left;
-  width: 33.33%;
+    /* h3 {
+      display: none;
+    } */
 }
 
-    
-}
+ 
