@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+Symbols+2&display=swap');
 
 body {
     background-color: rgb(39, 4, 4);
+    font-family: "Noto Sans JP", sans-serif;
+
 }
+
+
 
 .nestedContent {
     background-color: red;
