@@ -12,7 +12,8 @@ body {
 
 .nestedrow {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  justify-content: space-evenly;
 }
 
 .row > .column > {
